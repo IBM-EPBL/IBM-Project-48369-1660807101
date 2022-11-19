@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>Prediction Page</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- bootstrap css -->
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="images/fevicon.png" type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <!-- owl stylesheets -->
+   <link rel="stylesheet" href="css/owl.carousel.min.css">
+   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen">
+   <!--  Google Font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.25/webcam.js"></script>
+</head>
+
+<body>
+   <!-- header section start -->
+   <div class="header_section">
+      <div class="container-fluid">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="logo"><a href="index.html">
+                  <h1>Skin Disease Detection
+               </a></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                     <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="LOGIN.html">Login</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="Register.html">Register</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="redirects tml.html">Prediction</a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </div>
+   </div>
+   <!-- header section end -->
+
+   <!-- banner section start -->
+   <div class="banner_section layout_padding">
+      <div class="container">
+         <div id="costum_slider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <h1 class="furniture_text"> <span style="color:rgb(0, 61, 121); font-weight: 600; ">Skin Disease <br>
+                     </span>Detection <br></h1>
+               </div>
+            </div>
+            </a>
+         </div>
+      </div>
+   </div>
+   <!-- banner section end -->
+
+
+   <!-- projeccts section start -->
+   <div class="furnitures_section layout_padding">
+      <div class="container">
+         <h1 class="our_text">AI-based localization and classification of skin disease on erythema</h1>
+
+      </div>
+   </div>
+   <div class="content">
+      <div class="problem">
+         <p class="heading">Skin diseases detection</p>
+         <p>
+            Nowadays people are suffering from skin diseases, More than 125 million people suffering
+            from Psoriasis also skin cancer rate is rapidly increasing over the last few decades especially
+            Melanoma is most diversifying skin cancer. If skin diseases are not treated at an earlier stage
+            then it may lead to complications in the body including spreading of the infection from one
+            individual to the other. The skin diseases can be prevented by investigating the infected
+            region at an early stage. The characteristic of the skin images is diversified so that it is a
+            challenging job to devise an efficient and robust algorithm for automatic detection of skin
+            disease and its severity. Skin tone and skin colour play an important role in skin disease
+            detection. Colour and coarseness of skin are visually different. Automatic processing of such
+            images for skin analysis requires quantitative discriminator to differentiate the diseases.
+         </p>
+      </div>
+   </div>
+
+   <div class="solution1">
+      <p class="heading-2">Image Prediction</p>
+      <div id="camera" class="cam"></div>
+      <br>
+
+      <!--FOR THE SNAPSHOT-->
+      <div class="snap-txt">
+         <input type="button" class="btncls1" value="Take a Snap" id="btPic" onclick="takeSnapShot()" />
+         <p id="snapShot"></p>
+      </div>
+   </div>
+   <div class="img-upld">
+      <form action="" class="upload">
+         <input type="file" id="image-input" accept="image/jpeg, image/png, image/jpg">
+         <div id="display-image"></div>
+         <a href="./imageprediction.html"><input type="button" value="Predict" class="btncls">
+      </form></a>
+   </div>
+
+   <!-- projects section end -->
+   <p class="copyright_text">2022 All Rights Reserved.
+   </p>
+   <!-- copyright section end -->
+   <!-- Javascript files-->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/jquery-3.0.0.min.js"></script>
+   <script src="js/plugin.js"></script>
+   <!-- sidebar -->
+   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="js/custom.js"></script>
+   <!-- javascript -->
+   <script src="js/owl.carousel.js"></script>
+   <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+   <script>
+      // CAMERA SETTINGS.
+      Webcam.set({
+         width: 221,
+         height: 133,
+         image_format: 'jpeg',
+         jpeg_quality: 100
+      });
+      Webcam.attach('#camera');
+
+      // SHOW THE SNAPSHOT.
+      takeSnapShot = function () {
+         Webcam.snap(function (data_uri) {
+            document.getElementById('snapShot').innerHTML =
+               '<img src="' + data_uri + '" width="70px" height="50px" />';
+         });
+      }
+   </script>
+   <script>
+      const image_input = document.querySelector("#image-input");
+
+      image_input.addEventListener("change", function () {
+         const reader = new FileReader();
+         reader.addEventListener("load", () => {
+            const uploaded_image = reader.result;
+            document.querySelector("#display-image").style.backgroundImage = `url(${uploaded_image})`;
+         });
+         reader.readAsDataURL(this.files[0]);
+      });
+   </script>
+</body>
+
+</html>
